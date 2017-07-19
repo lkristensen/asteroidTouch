@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=AsteroidTouch
+Exec=asteroidApp
+Icon=asteroidApp/icon.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true

@@ -1,0 +1,15 @@
+{
+    "name": "asteroidtouch.lkristensen",
+    "description": "A sync client for Asteroid OS for smartwatches",
+    "architecture": "@CLICK_ARCH@",
+    "title": "asteroidTouch",
+    "hooks": {
+        "asteroidApp": {
+            "apparmor": "asteroidApp/asteroidTouch.apparmor",
+            "desktop": "asteroidApp/asteroidTouch.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Laust Kristensen <laustijapan@hotmail.com>",
+    "framework": "ubuntu-sdk-15.04.1"
+}
