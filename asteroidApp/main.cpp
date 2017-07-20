@@ -4,9 +4,13 @@
 #include <QtQml>
 #include <QFile>
 
+#include "servicecontrol.h"
+
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
+
+    qmlRegisterType<ServiceControl>("AsteroidTouch", 1, 0, "ServiceController");
 
     QQuickView view;
     view.engine()->rootContext()->setContextProperty("version", QStringLiteral(VERSION));

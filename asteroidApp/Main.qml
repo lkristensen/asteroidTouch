@@ -1,6 +1,8 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 
+import AsteroidTouch 1.0
+
 /*!
     \brief MainView with a Label and Button elements.
 */
@@ -14,6 +16,21 @@ MainView {
 
     width: units.gu(100)
     height: units.gu(75)
+
+    ServiceController {
+        id: serviceController
+        serviceName: "asteroidD"
+        Component.onCompleted: {
+            if (!serviceController.serviceFileInstalled) {
+                print("Service file not installed. Installing now.")
+                serviceController.installServiceFile();
+            }
+            if (!serviceController.serviceRunning) {
+                print("Service not running. Starting now.")
+                serviceController.startService();
+            }
+        }
+    }
 
     Page {
         header: PageHeader {

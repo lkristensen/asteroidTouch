@@ -8,7 +8,8 @@ QT += qml quick
 
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    servicecontrol.cpp
 
 RESOURCES += asteroidApp.qrc
 
@@ -33,3 +34,6 @@ INSTALLS += desktop_file
 
 target.path = $${UBUNTU_CLICK_BINARY_PATH}
 INSTALLS += target
+
+HEADERS += \
+    servicecontrol.h

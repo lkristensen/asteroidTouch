@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-20 04:27+0000\n"
+"POT-Creation-Date: 2017-07-20 13:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/laust/Code/asteroidTouch/asteroidApp/Main.qml:21
+#: /home/laust/Code/asteroidTouch/asteroidApp/Main.qml:38
 msgid "test"
 msgstr ""
 
-#: /home/laust/Code/asteroidTouch/asteroidApp/Main.qml:38
+#: /home/laust/Code/asteroidTouch/asteroidApp/Main.qml:55
 msgid "Hello.."
 msgstr ""
 
-#: /home/laust/Code/asteroidTouch/asteroidApp/Main.qml:49
+#: /home/laust/Code/asteroidTouch/asteroidApp/Main.qml:66
 msgid "Tap me!"
 msgstr ""
 
-#: /home/laust/Code/asteroidTouch/asteroidApp/Main.qml:51
+#: /home/laust/Code/asteroidTouch/asteroidApp/Main.qml:68
 msgid "..world!"
 msgstr ""
