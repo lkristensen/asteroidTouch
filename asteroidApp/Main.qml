@@ -12,7 +12,7 @@ MainView {
     objectName: "mainView"
 
     // Note! applicationName needs to match the "name" field of the click manifest
-    applicationName: "test.username"
+    applicationName: "asteroidtouch.lkristensen"
 
     width: units.gu(100)
     height: units.gu(75)
@@ -21,6 +21,7 @@ MainView {
         id: serviceController
         serviceName: "asteroidD"
         Component.onCompleted: {
+            print("Tester")
             if (!serviceController.serviceFileInstalled) {
                 print("Service file not installed. Installing now.")
                 serviceController.installServiceFile();
@@ -65,7 +66,7 @@ MainView {
             width: parent.width
             text: i18n.tr("Tap me!")
             onClicked: {
-                label.text = i18n.tr("..world!")
+                label.text = "new2"
             }
         }
     }

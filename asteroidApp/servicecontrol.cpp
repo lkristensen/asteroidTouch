@@ -55,7 +55,7 @@ bool ServiceControl::installServiceFile()
 
     QString appDir = qApp->applicationDirPath();
     // Try to replace version with "current" to be more robust against updates
-//    appDir.replace(QRegExp("rockwork.mzanetti\/[0-9.]*\/"), "rockwork.mzanetti/current/");
+    appDir.replace(QRegExp("asteroidtouch.lkristensen\/[0-9.]*\/"), "asteroidtouch.lkristensen/current/");
 
     f.write("start on started unity8\n");
     f.write("pre-start script\n");

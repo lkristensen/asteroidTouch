@@ -18,4 +18,5 @@ Core::Core(QObject *parent) :
 void Core::init()
 {
     qDebug() << "Initializing";
+    m_dbusInterface = new DBusInterface(this);
 }

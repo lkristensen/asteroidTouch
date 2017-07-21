@@ -1,4 +1,4 @@
-QT += core
+QT += core dbus
 QT -= gui
 
 include(../version.pri)
@@ -10,7 +10,8 @@ CONFIG +=c++11
 TEMPLATE = app
 
 SOURCES += main.cpp \
-    core.cpp
+    core.cpp \
+    dbusinterface.cpp
 
 target.path = $${UBUNTU_CLICK_BINARY_PATH}
 INSTALLS += target
@@ -18,4 +19,5 @@ INSTALLS += target
 QMAKE_POST_LINK = sed -i s/@VERSION@/$$VERSION/g $$OUT_PWD/../manifest.json || exit 0
 
 HEADERS += \
-    core.h
+    core.h \
+    dbusinterface.h
