@@ -1,4 +1,6 @@
 import QtQuick 2.4
+import QtQuick.Layouts 1.1
+
 import Ubuntu.Components 1.3
 
 import AsteroidTouch 1.0
@@ -33,41 +35,12 @@ MainView {
         }
     }
 
-    Page {
-        header: PageHeader {
-            id: pageHeader
-            title: i18n.tr("test")
-            StyleHints {
-                foregroundColor: UbuntuColors.orange
-                backgroundColor: UbuntuColors.porcelain
-                dividerColor: UbuntuColors.slate
-            }
-        }
-
-        Label {
-            id: label
-            objectName: "label"
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: pageHeader.bottom
-                topMargin: units.gu(2)
-            }
-
-            text: i18n.tr("Hello..")
-        }
-
-        Button {
-            objectName: "button"
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: label.bottom
-                topMargin: units.gu(2)
-            }
-            width: parent.width
-            text: i18n.tr("Tap me!")
-            onClicked: {
-                label.text = "new2"
-            }
-        }
+    BLEDevices {
+        id: devices
+    }
+    AdaptivePageLayout {
+        id: pageStack
+        anchors.fill: parent
+        primaryPageSource: Qt.resolvedUrl("WatchFinder.qml")
     }
 }

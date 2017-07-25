@@ -4,12 +4,13 @@ TARGET = asteroidApp
 include(../version.pri)
 load(ubuntu-click)
 
-QT += qml quick
+QT += qml quick dbus
 
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    servicecontrol.cpp
+    servicecontrol.cpp \
+    bledevices.cpp
 
 RESOURCES += asteroidApp.qrc
 
@@ -36,4 +37,5 @@ target.path = $${UBUNTU_CLICK_BINARY_PATH}
 INSTALLS += target
 
 HEADERS += \
-    servicecontrol.h
+    servicecontrol.h \
+    bledevices.h
